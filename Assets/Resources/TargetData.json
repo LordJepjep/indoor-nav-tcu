@@ -1,0 +1,228 @@
+{
+  "TargetList": [
+    {
+      "Name": "Room",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 0.934,
+        "y": 0.896,
+        "z": 2.957
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Room2",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 3.512,
+        "y": 0.891,
+        "z": 0.975
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Room3",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 3.726,
+        "y": 0.5,
+        "z": -2.958
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "CR",
+      "FloorNumber": 0,
+      "Position": {
+        "x": -1.782,
+        "y": 0.688,
+        "z": 3.106
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "LivingRoom",
+      "FloorNumber": 0,
+      "Position": {
+        "x": -0.18,
+        "y": 0.5,
+        "z": -2.958
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Outside1",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 4.32,
+        "y": -1.307,
+        "z": 6.823
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": -90.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Kitchen",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 3.522,
+        "y": -1.098,
+        "z": -0.177
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Dining",
+      "FloorNumber": 0,
+      "Position": {
+        "x": -0.383,
+        "y": -1.461,
+        "z": 0.391
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "RoomQr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 4.918,
+        "y": 1.239,
+        "z": -0.9259
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 90.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Room2Qr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 1.819,
+        "y": 1.1736,
+        "z": -2.504
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Room3Qr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": -0.488,
+        "y": 0.7388,
+        "z": -3.704
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "PCQr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": -0.0301,
+        "y": 0.857,
+        "z": 1.182
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "CRQr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 5.7253,
+        "y": 1.3753,
+        "z": 1.9867
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Outside1Qr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 9.351,
+        "y": -1.207,
+        "z": -3.8852
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Outside2Qr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 5.3113,
+        "y": -0.8443,
+        "z": -0.7153
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Name": "Outside3Qr",
+      "FloorNumber": 1,
+      "Position": {
+        "x": 2.951,
+        "y": -1.938,
+        "z": -3.035
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    }
+  ]
+}
