@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 6399260}
   - component: {fileID: 6399259}
   m_Layer: 10
-  m_Name: DiningTargetCube
+  m_Name: Dining
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,7 +660,7 @@ GameObject:
   - component: {fileID: 22080455}
   - component: {fileID: 22080454}
   m_Layer: 10
-  m_Name: LivingRoomTargetCube
+  m_Name: LivingRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48543484}
   m_Layer: 0
-  m_Name: Room2QrCodeRecenterTarget
+  m_Name: Room2Qr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1569,7 +1569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 168747423}
   m_Layer: 0
-  m_Name: PCQrCodeRecenterTarget
+  m_Name: PCQr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2865,7 +2865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 466035847}
   m_Layer: 0
-  m_Name: Outside2QrCodeRecenterTarget
+  m_Name: Outside2Qr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5222,7 +5222,7 @@ GameObject:
   - component: {fileID: 779833896}
   - component: {fileID: 779833895}
   m_Layer: 10
-  m_Name: CRTargetCube
+  m_Name: CR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6928,7 +6928,7 @@ GameObject:
   - component: {fileID: 928798972}
   - component: {fileID: 928798971}
   m_Layer: 10
-  m_Name: KitchenTargetCube
+  m_Name: Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7677,7 +7677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1104893856}
   m_Layer: 0
-  m_Name: Outside3QrCodeRecenterTarget
+  m_Name: Outside3Qr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7743,7 +7743,7 @@ GameObject:
   - component: {fileID: 1114935755}
   - component: {fileID: 1114935754}
   m_Layer: 10
-  m_Name: Outside1TargetCube
+  m_Name: Outside1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8620,7 +8620,7 @@ GameObject:
   - component: {fileID: 1221455429}
   - component: {fileID: 1221455428}
   m_Layer: 10
-  m_Name: Room3TargetCube
+  m_Name: Room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9246,7 +9246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1280254978}
   m_Layer: 0
-  m_Name: Outside1QrCodeRecenterTarget
+  m_Name: Outside1Qr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10418,7 +10418,7 @@ GameObject:
   - component: {fileID: 1501652509}
   - component: {fileID: 1501652508}
   m_Layer: 10
-  m_Name: Room1TargetCube
+  m_Name: Room1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12652,7 +12652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838592128}
   m_Layer: 0
-  m_Name: Room3QrCodeRecenterTarget
+  m_Name: Room3Qr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13297,7 +13297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1985156494}
   m_Layer: 0
-  m_Name: Room1QrCodeRecenterTarget
+  m_Name: Room1Qr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13333,7 +13333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1985308837
 Transform:
   m_ObjectHideFlags: 0
@@ -13970,7 +13970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2066869827}
   m_Layer: 0
-  m_Name: CRQrCodeRecenterTarget
+  m_Name: CRQr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15730,7 +15730,7 @@ GameObject:
   - component: {fileID: 5857893991238411918}
   - component: {fileID: 314723726179409876}
   m_Layer: 10
-  m_Name: Room2TargetCube
+  m_Name: Room2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
