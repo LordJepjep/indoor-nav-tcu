@@ -24,6 +24,8 @@ public class QrCodeRecenter : MonoBehaviour {
     private TMP_Text qrTextField;
     [SerializeField]
     private TMP_Dropdown destDropdown;
+    [SerializeField]
+    private ActivateApplicationCanvas activateAppCanvas;
 
     private Texture2D cameraImageTexture;
     private IBarcodeReader reader = new BarcodeReader(); // create a barcode reader instance
@@ -131,10 +133,14 @@ public class QrCodeRecenter : MonoBehaviour {
 
         // Do something with the result
         if (result != null) {
+            
             SetQrCodeRecenterTarget(result.Text);
             ToggleScanning();
+            activateAppCanvas.ActivateAppCanvas();
         }
     }
+
+
 
     private void SetQrCodeRecenterTarget(string targetText) {
         TargetFacade currentTarget = targetHandler.GetCurrentTargetByTargetText(targetText);

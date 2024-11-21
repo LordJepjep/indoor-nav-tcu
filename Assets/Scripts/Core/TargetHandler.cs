@@ -22,6 +22,8 @@ public class TargetHandler : MonoBehaviour {
     private void Start() {
         GenerateTargetItems();
         FillDropdownWithTargetItems();
+        SetSelectedTargetPositionStartup(CurrentDestination.selectedDestination);
+        
     }
 
     // Lists all Targets from the Target List JSON FIle
@@ -43,12 +45,12 @@ public class TargetHandler : MonoBehaviour {
 
     private TargetFacade CreateTargetFacade(Target target)
     {
-        Debug.Log("Target Name: " + target.Name + " Target Parent: " + targetObjectsParentTransforms[target.FloorNumber]);
-        GameObject targetObject = Instantiate(targetObjectPrefab, targetObjectsParentTransforms[target.FloorNumber], false);
+        Debug.Log("Target Name: " + target.Name + " Target Parent: " + targetObjectsParentTransforms[target.TargetType]);
+        GameObject targetObject = Instantiate(targetObjectPrefab, targetObjectsParentTransforms[target.TargetType], false);
 
         int qrLayer = LayerMask.NameToLayer("QR");
 
-        if (target.FloorNumber == 1)
+        if (target.TargetType == 1)
         {
             // Set the layer of the parent object
             targetObject.layer = qrLayer;
@@ -57,15 +59,21 @@ public class TargetHandler : MonoBehaviour {
             SetLayerRecursively(targetObject, qrLayer);
         }
 
-        targetObject.SetActive(true);
+        targetObject.SetActive(false);
+        
         targetObject.name = target.Name;
+
+        if (targetObject.name == CurrentDestination.selectedDestination)
+        {
+            targetObject.SetActive(true);
+        }
 
         targetObject.transform.localPosition = target.Position;
         targetObject.transform.localRotation = Quaternion.Euler(target.Rotation);
 
         TargetFacade targetData = targetObject.GetComponent<TargetFacade>();
         targetData.Name = target.Name;
-        targetData.FloorNumber = target.FloorNumber;
+        targetData.TargetType = target.TargetType;
 
         return targetData;
     }
@@ -85,7 +93,7 @@ public class TargetHandler : MonoBehaviour {
     {
         List<TMP_Dropdown.OptionData> targetFacadeOptionData =
             currentTargetItems
-            .Where(x => x.FloorNumber != 1)  // Filter out items with FloorNumber 1
+            .Where(x => x.TargetType != 1)  // Filter out items with TargetType 1
             .Select(x => new TMP_Dropdown.OptionData
             {
                 text = x.Name
@@ -98,6 +106,10 @@ public class TargetHandler : MonoBehaviour {
     public void SetSelectedTargetPositionWithDropdown(int selectedValue) {
         navigationController.TargetPosition = GetCurrentlySelectedTarget(selectedValue);
     }
+    public void SetSelectedTargetPositionStartup(string targetText) {
+        TargetFacade currentTarget = GetCurrentTargetByTargetText(targetText);
+        navigationController.TargetPosition = currentTarget.transform.position;
+    }
 
     private Vector3 GetCurrentlySelectedTarget(int selectedValue) {
         if (selectedValue >= currentTargetItems.Count) {
@@ -106,7 +118,6 @@ public class TargetHandler : MonoBehaviour {
 
         return currentTargetItems[selectedValue].transform.position;
     }
-
     public TargetFacade GetCurrentTargetByTargetText(string targetText) {
         return currentTargetItems.Find(x =>
             x.Name.ToLower().Equals(targetText.ToLower()));

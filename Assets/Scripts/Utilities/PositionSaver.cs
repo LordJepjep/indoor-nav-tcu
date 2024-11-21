@@ -42,7 +42,7 @@ public class PositionSaver : MonoBehaviour
             target = new Target
             {
                 Name = gameObject.name,
-                FloorNumber = FloorChecker(gameObject.name),
+                TargetType = TargetTypeChecker(gameObject.name),
                 Position = Vector3.zero,
                 Rotation = Vector3.zero
             };
@@ -62,7 +62,7 @@ public class PositionSaver : MonoBehaviour
         target.Rotation.z = transform.rotation.eulerAngles.z;
 
         Debug.Log("Target Name: " + target.Name);
-        Debug.Log("Target Floor: " + target.FloorNumber);
+        Debug.Log("Target Floor: " + target.TargetType);
         Debug.Log("Target Position: " + target.Position);
         Debug.Log("Target Rotation: " + target.Rotation);
         // Save updated JSON data
@@ -71,7 +71,7 @@ public class PositionSaver : MonoBehaviour
         Debug.Log("Position and rotation saved to JSON: " + updatedJson);
     }
 
-    private int FloorChecker(string name)
+    private int TargetTypeChecker(string name)
     {
         if (name.Contains("Qr"))
         {

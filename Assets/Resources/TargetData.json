@@ -2,7 +2,7 @@
     "TargetList": [
         {
             "Name": "Room",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": 0.9340000152587891,
                 "y": 0.8960000276565552,
@@ -16,7 +16,7 @@
         },
         {
             "Name": "Room2",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": 3.51200008392334,
                 "y": 0.890999972820282,
@@ -30,7 +30,7 @@
         },
         {
             "Name": "Room3",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": 3.7260000705718996,
                 "y": 0.5,
@@ -44,7 +44,7 @@
         },
         {
             "Name": "CR",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": -1.781999945640564,
                 "y": 0.6880000233650208,
@@ -58,7 +58,7 @@
         },
         {
             "Name": "LivingRoom",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": 0.27199986577033999,
                 "y": -0.3399999737739563,
@@ -72,7 +72,7 @@
         },
         {
             "Name": "Outside1",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": 4.320000171661377,
                 "y": -1.3070000410079957,
@@ -86,7 +86,7 @@
         },
         {
             "Name": "Kitchen",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": 3.5220000743865969,
                 "y": -1.0980000495910645,
@@ -100,7 +100,7 @@
         },
         {
             "Name": "Dining",
-            "FloorNumber": 0,
+            "TargetType": 0,
             "Position": {
                 "x": -0.382999986410141,
                 "y": -1.4609999656677247,
@@ -114,7 +114,7 @@
         },
         {
             "Name": "RoomQr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": 4.918000221252441,
                 "y": 1.2389999628067017,
@@ -128,7 +128,7 @@
         },
         {
             "Name": "Room2Qr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": 1.819000005722046,
                 "y": 1.1735999584197999,
@@ -142,7 +142,7 @@
         },
         {
             "Name": "Room3Qr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": -0.4880000054836273,
                 "y": 0.7387999892234802,
@@ -156,7 +156,7 @@
         },
         {
             "Name": "PCQr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": -0.03009999915957451,
                 "y": 0.8569999933242798,
@@ -170,7 +170,7 @@
         },
         {
             "Name": "CRQr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": 5.725299835205078,
                 "y": 1.3753000497817994,
@@ -184,7 +184,7 @@
         },
         {
             "Name": "Outside1Qr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": 9.35099983215332,
                 "y": -1.2070000171661378,
@@ -198,7 +198,7 @@
         },
         {
             "Name": "Outside2Qr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": 5.311299800872803,
                 "y": -0.8442999720573425,
@@ -212,7 +212,7 @@
         },
         {
             "Name": "Outside3Qr",
-            "FloorNumber": 1,
+            "TargetType": 1,
             "Position": {
                 "x": 2.9509999752044679,
                 "y": -1.937999963760376,

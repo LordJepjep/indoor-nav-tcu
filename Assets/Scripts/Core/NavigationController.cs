@@ -8,6 +8,8 @@ public class NavigationController : MonoBehaviour {
 
     public NavMeshPath CalculatedPath { get; private set; }
 
+    public float navigationDistance;
+
     private void Start() {
         CalculatedPath = new NavMeshPath();
         NavMeshHit hit;
@@ -25,6 +27,7 @@ public class NavigationController : MonoBehaviour {
 
         // Optionally set the source to the nearest valid point on the NavMesh
         transform.position = hit.position;
+        CalculateNavDistance();
     }
 
 
@@ -42,5 +45,17 @@ public class NavigationController : MonoBehaviour {
             }
             
         }
+        CalculateNavDistance();
+    }
+
+    private void CalculateNavDistance()
+    {
+        navigationDistance = Vector3.Distance(transform.position, CalculatedPath.corners[0]);
+        for (int i = 1; i < CalculatedPath.corners.Length; i++)
+        {
+            navigationDistance += Vector3.Distance(CalculatedPath.corners[i - 1], CalculatedPath.corners[i]);
+        }
+        CurrentDistance.distance = (navigationDistance - 1.2).ToString("0.00") + "m";
+        Debug.Log(CurrentDistance.distance);
     }
 }
